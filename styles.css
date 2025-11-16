@@ -597,7 +597,7 @@ h1 {
   height: 30px;
   background: #000;
   border-radius: 100%;
-  transition: 0.01s linear;
+  transition: 0.05s linear;
   background: linear-gradient(
     45deg,
     #ff000d,
