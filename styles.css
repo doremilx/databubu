@@ -382,7 +382,7 @@ h1 {
 
 /* Graphique Carte */
 .graphiqueCarte {
-  height: 110vh;
+  padding: 40px 0 60px;
   background-color: #e99ea8;
 }
 
@@ -762,6 +762,7 @@ footer ul li button:hover {
   flex-direction: column;
   gap: 8px;
   margin: 0;
+  word-break: break-word;
 }
 
 .popup-contact-content .personne a {
@@ -840,9 +841,9 @@ footer ul li button:hover {
     height: 24px;
   }
 
-  .graphiqueCarte {
+/*   .graphiqueCarte {
     height: 120vh;
-  }
+  } */
 
   .carteFlex {
     flex-direction: column;
@@ -983,9 +984,9 @@ footer ul li button:hover {
     height: 19px;
   }
 
-  .graphiqueCarte {
+/*   .graphiqueCarte {
     height: 124vh;
-  }
+  } */
 }
 
 @media (max-width: 950px) {
