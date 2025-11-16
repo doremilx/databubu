@@ -229,6 +229,7 @@ h1 {
   margin-inline: auto;
   display: flex;
   gap: 70px;
+  align-items: center;
 }
 
 .conteneur-presentation img {
@@ -279,6 +280,8 @@ h1 {
   margin-inline: auto;
   font-size: 1.5rem;
   gap: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .conteneur_histoire img {
@@ -382,7 +385,7 @@ h1 {
 
 /* Graphique Carte */
 .graphiqueCarte {
-  padding: 40px 0 60px;
+  padding: 40px 0 30px;
   background-color: #e99ea8;
 }
 
@@ -841,10 +844,6 @@ footer ul li button:hover {
     height: 24px;
   }
 
-/*   .graphiqueCarte {
-    height: 120vh;
-  } */
-
   .carteFlex {
     flex-direction: column;
     padding-right: 0px;
@@ -913,6 +912,7 @@ footer ul li button:hover {
   .logo {
     padding-top: 140px;
   }
+  
   .menu-logo-responsive {
     display: block;
     justify-content: center;
@@ -925,10 +925,12 @@ footer ul li button:hover {
     display: none;
     background-color: #fbf6d1;
     position: fixed;
-    height: 100vh;
-    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     opacity: 95%;
-    z-index: 1000000;
+    z-index: 1000;
   }
 
   .menu-responsive ul {
@@ -939,13 +941,17 @@ footer ul li button:hover {
     gap: 50px;
     padding: 0;
     margin: 0;
-    padding-top: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .menu-responsive ul a {
     text-decoration: none;
     font-family: BiscuitGlitch, sans-serif;
     font-size: 3em;
+    color: #5a2491;
   }
 
   .graphiqueEmpile {
@@ -983,10 +989,6 @@ footer ul li button:hover {
     width: 10px;
     height: 19px;
   }
-
-/*   .graphiqueCarte {
-    height: 124vh;
-  } */
 }
 
 @media (max-width: 950px) {
