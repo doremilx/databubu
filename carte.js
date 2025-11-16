@@ -60,14 +60,14 @@ let petitLabubu = L.icon({
 });
 
 let moyenLabubu = L.icon({
-  iconUrl: 'MarkersLabubu/labubu_marker_bleu2.png',
+  iconUrl: 'MarkersLabubu/labubu_marker_bleu4.png',
   iconSize: [50, 50], // size of the icon
   iconAnchor: [26, 40], // point of the icon which will correspond to marker's location
   popupAnchor: [0, -35] // point from which the popup should open relative to the iconAnchor
 });
 
 let grandLabubu = L.icon({
-  iconUrl: 'MarkersLabubu/labubu_marker_vert2.png',
+  iconUrl: 'MarkersLabubu/labubu_marker_vert6.png',
   iconSize: [60, 60], // size of the icon
   iconAnchor: [30, 56], // point of the icon which will correspond to marker's location
   popupAnchor: [0, -35] // point from which the popup should open relative to the iconAnchor

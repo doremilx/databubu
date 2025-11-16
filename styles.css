@@ -1086,7 +1086,7 @@ footer ul li button:hover {
   }
 
   .graphiquePoints p, .graphiqueEmpile p, .columnLegendeCarte2 p {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .carteFlex {
@@ -1096,6 +1096,18 @@ footer ul li button:hover {
   .labubuDecoCarte {
     width: 120px;
     object-fit: contain;
+  }
+
+  .leaflet-popup-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .leaflet-popup-content p {
+    font-size: 0.95rem;
+  }
+
+  .leaflet-popup-content-wrapper {
+    max-width: 260px;
   }
 }
 
