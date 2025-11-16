@@ -82,7 +82,13 @@ const lineChart = new Chart(ctxLine, {
   options: {
     responsive: true,
     maintainAspectRatio: false,
-    
+    layout: {
+      padding: {
+        bottom: 20,
+        left: 20,
+        right: 20
+      }
+    },
     plugins: {
       legend: {
         position: getLegendPosition('lineChart'),
@@ -177,6 +183,12 @@ const barChart = new Chart(ctxBar, {
   options: {
     responsive: true,
     maintainAspectRatio: false,
+    layout: {
+      padding: {
+        bottom: 20,
+        left: 20,
+      }
+    },
     plugins: {
       legend: {
         position: getLegendPosition('barChart'),

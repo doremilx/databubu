@@ -9,13 +9,16 @@ let map = L.map('map', {
 ).setView([48.866667, 2.333333], 2.4);
 
 map.scrollWheelZoom.disable();
+const overlay = document.querySelector('.map-overlay');
 
-map.on('click', function () {
+overlay.addEventListener('click', function () {
   map.scrollWheelZoom.enable();
+  overlay.classList.add('hidden');
 });
 
 map.on('mouseout', function () {
   map.scrollWheelZoom.disable();
+  overlay.classList.remove('hidden');
 });
 
 
