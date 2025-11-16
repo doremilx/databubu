@@ -103,13 +103,7 @@ h1 {
   background: #000;
   border-radius: 100%;
   transition: 0.05s linear;
-  background: linear-gradient(
-    45deg,
-    red,
-    rgb(118, 118, 255),
-    rgb(126, 255, 126),
-    rgb(255, 122, 122)
-  );
+  background-color: #3a2c2c;
   background-size: 400% 400%;
   animation: gradientAnim 8s ease infinite;
 }
@@ -1156,7 +1150,7 @@ height: 15px;
   .oeil2{
      display: none;
   }
-.
+
 }
 
 @media (max-width: 950px) {
