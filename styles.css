@@ -349,7 +349,6 @@ h1 {
   min-height: 620px;
 }
 
-
 .conteneur-empile h1 {
   margin-inline: 50px;
   margin-bottom: 20px;
@@ -357,21 +356,88 @@ h1 {
   padding-bottom: 50px;
 }
 
-.conteneur-empile p{
+.conteneur-empile p {
   width: fit-content;
   margin-left: 20px;
   text-align: start;
-
 }
+
+/* labubu decoration Graphique Empile avec yeux qui bougent */
 .LabubuDecoEmpile {
   position: absolute;
-  width: 450px;
+  width: 300px;
   right: 0px;
-  top: clamp(600px, 60vh, 650px);
+  top: 500px;
   z-index: -1;
   transition: all 1s ease-in-out;
 }
 
+
+.LabubuDecoEmpile img {
+  width: 100%; /* L'image s'adapte à la taille du conteneur */
+  height: auto; /* Conserve les proportions de l'image */
+  display: block;
+}
+
+
+.oeil2 {
+  position: absolute;
+  width: 33px;
+  height: 43px;
+  background: #fff;
+  border-radius: 100%;
+  overflow: hidden;
+
+}
+
+.oeil-gauche2 {
+  top: 141px;
+  left: 98px;
+  width: 28px;
+  rotate: 10deg;
+}
+
+.oeil-droit2 {
+  top: 145px;
+  right: 115px;
+}
+
+@keyframes gradientAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.pupille2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 25px;
+  background: #000;
+  border-radius: 100%;
+  transition: 0.05s linear;
+  background: linear-gradient(
+    45deg,
+    red,
+    rgb(118, 118, 255),
+    rgb(126, 255, 126),
+    rgb(255, 122, 122)
+  );
+  background-size: 400% 400%;
+  animation: gradientAnim 8s ease infinite;
+}
+
+
+
+
+/* Style pour le graphique */
 .graphiqueEmpile {
   width: 95%;
   height: 500px;
@@ -382,6 +448,7 @@ h1 {
   font-size: 1.1em;
   padding-top: 15px;
 }
+
 
 /* Graphique Carte */
 .graphiqueCarte {
@@ -480,11 +547,76 @@ h1 {
   max-width: 1000px;
 }
 
+/* Labubu Yeux qui bougent3 carte */
 .labubuDecoCarte {
   width: 350px;
   margin-left: 50px;
-  position: static;
+  position: relative;
+  display: block;
 }
+.labubuDecoCarte img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.oeil3 {
+  position: absolute;
+  width: 35px;
+  height: 50px;
+  background: #fff;
+  border-radius: 100%;
+  overflow: hidden;
+
+}
+
+.oeil-gauche3 {
+  top: 160px;
+  left: 107px;
+  width: 43px;
+  height: 52px;
+}
+
+.oeil-droit3 {
+  top: 155px;
+  right: 128px;
+  rotate: -13deg;
+}
+
+@keyframes gradientAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.pupille3 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 30px;
+  background: #000;
+  border-radius: 100%;
+  transition: 0.01s linear;
+  background: linear-gradient(
+    45deg,
+    #ff000d,
+    #ff7b00,
+    #00a2ff,
+    #04ff00
+  );
+  background-size: 400% 400%;
+  animation: gradientAnim 8s ease infinite;
+}
+
+
+/* Labubu Yeux qui bougent3 carte */
 
 .legendes {
   display: flex;
@@ -801,6 +933,34 @@ footer ul li button:hover {
     margin-top: 50px;
   }
 
+  .LabubuDecoEmpile {
+    width: 200px;
+    top: 600px;
+    opacity: 0.5;
+  }
+
+
+
+.oeil-gauche2 {
+  top: 95px;
+  left: 68px;
+  width: 17px;
+  height: 28px;
+  rotate: 11deg;
+}
+
+.oeil-droit2 {
+  top: 95px;
+  right: 76px;
+  width: 23px;
+  height: 30px;
+}
+
+.pupille2{
+width: 10px;
+height: 15px;
+}
+
   .popup-contact-content .container {
     gap: 30px;
   }
@@ -872,6 +1032,10 @@ footer ul li button:hover {
   .labubuDecoCarte {
     width: 200px;
     height: auto;
+  }
+
+  .oeil3{
+    display: none;
   }
 
   .conteneur-conclusion {
@@ -953,18 +1117,6 @@ footer ul li button:hover {
     font-size: 3em;
     color: #5a2491;
   }
-
-  .graphiqueEmpile {
-    width: 90%;
-  }
-  
-  .LabubuDecoEmpile {
-    width: 180px;
-    top: 100px;
-    left: 10px;
-    transform: scaleX(-1) !important;
-  }
-
   .labubu {
     width: 150px;
     top: 540px;
@@ -989,6 +1141,22 @@ footer ul li button:hover {
     width: 10px;
     height: 19px;
   }
+
+  .graphiqueEmpile {
+    width: 90%;
+  }
+  
+  .LabubuDecoEmpile {
+    width: 180px;
+    top: 100px;
+    left: 10px;
+    transform: scaleX(-1) !important;
+  }
+
+  .oeil2{
+     display: none;
+  }
+.
 }
 
 @media (max-width: 950px) {
@@ -1023,13 +1191,14 @@ footer ul li button:hover {
     height: 70px;
     width: 70px;
   }
-
+.labubuDecoCarte{
+  margin-left: 0;
+  align-content:center;
+}
   .LabubuDecoEmpile {
     width: 250px;
-    top: 700px;
+    top: 550px;
     left: 10px;
-    transform: scaleX(-1);
-    opacity: 50%;
   }
   footer h1 {
     font-size: 2rem;

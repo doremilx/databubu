@@ -48,6 +48,49 @@ document.addEventListener("mousemove", (e) => {
     pupille.style.transform = `translate(${moveX}px, ${moveY}px)`;
   });
 });
+/* Labubu yeux qui bougent */
+
+/* Labubu yeux qui bougent2 pour le graphique empilé */
+
+document.addEventListener("mousemove", (e) => {
+  const yeux = document.querySelectorAll(".pupille2");
+  yeux.forEach(pupille2 => {
+    const rect = pupille2.parentElement.getBoundingClientRect();
+    const x = e.clientX - (rect.left + rect.width / 2);
+    const y = e.clientY - (rect.top + rect.height / 2);
+    const angle = Math.atan2(y, x);
+    const distance = Math.min(10, Math.hypot(x, y) / 20); // limite le déplacement
+
+    const moveX = Math.cos(angle) * distance;
+    const moveY = Math.sin(angle) * distance;
+
+    pupille2.style.transform = `translate(${moveX}px, ${moveY}px)`;
+  });
+});
+/* Labubu yeux qui bougent2 pour le graphique empilé */
+
+/* Labubu Yeux qui bougent3 carte */
+
+document.addEventListener("mousemove", (e) => {
+  const yeux = document.querySelectorAll(".pupille3");
+  yeux.forEach(pupille3 => {
+    const rect = pupille3.parentElement.getBoundingClientRect();
+    const x = e.clientX - (rect.left + rect.width / 2);
+    const y = e.clientY - (rect.top + rect.height / 2);
+    const angle = Math.atan2(y, x);
+    const distance = Math.min(10, Math.hypot(x, y) / 20); // limite le déplacement
+
+    const moveX = Math.cos(angle) * distance;
+    const moveY = Math.sin(angle) * distance;
+
+    pupille3.style.transform = `translate(${moveX}px, ${moveY}px)`;
+  });
+});
+
+
+
+/* Labubu Yeux qui bougent3 carte */
+
 
 document.querySelector('.remonte_page').addEventListener('click', function(test){
     const CibleLogo = document.querySelector('.logo');
