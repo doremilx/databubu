@@ -109,7 +109,7 @@ h1 {
 
 /* Menu de navigation */
 #presentation {
-  min-height: 60vh;
+  min-height: 70vh;
   height: fit-content;
   align-content: center;
 }
@@ -1259,7 +1259,12 @@ footer ul li button:hover {
   }
 
   header {
-    overflow: hidden; /* empêche Labubu de dépasser sur la section suivante */
+    min-height: auto;
+    padding-bottom: 310px;
+  }
+
+  #presentation {
+    margin-top: 40px;
   }
 }
 
