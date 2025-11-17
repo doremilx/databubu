@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   overflow-x: hidden;
 }
 body {
@@ -56,7 +56,6 @@ h1 {
   right: 30px;
   top: 500px;
 }
-
 
 .labubu .tete {
   width: 100%;
@@ -110,7 +109,7 @@ h1 {
 
 /* Menu de navigation */
 #presentation {
-  min-height: 70vh;
+  min-height: 60vh;
   height: fit-content;
   align-content: center;
 }
@@ -366,13 +365,11 @@ h1 {
   transition: all 1s ease-in-out;
 }
 
-
 .LabubuDecoEmpile img {
-  width: 100%; /* L'image s'adapte à la taille du conteneur */
-  height: auto; /* Conserve les proportions de l'image */
+  width: 100%;
+  height: auto;
   display: block;
 }
-
 
 .oeil2 {
   position: absolute;
@@ -381,7 +378,6 @@ h1 {
   background: #fff;
   border-radius: 100%;
   overflow: hidden;
-
 }
 
 .oeil-gauche2 {
@@ -428,9 +424,6 @@ h1 {
   animation: gradientAnim 8s ease infinite;
 }
 
-
-
-
 /* Style pour le graphique */
 .graphiqueEmpile {
   width: 95%;
@@ -442,7 +435,6 @@ h1 {
   font-size: 1.1em;
   padding-top: 15px;
 }
-
 
 /* Graphique Carte */
 .graphiqueCarte {
@@ -548,7 +540,7 @@ h1 {
   position: relative;
   display: block;
 }
-.labubuDecoCarte img{
+.labubuDecoCarte img {
   width: 100%;
   height: auto;
   display: block;
@@ -561,7 +553,6 @@ h1 {
   background: #fff;
   border-radius: 100%;
   overflow: hidden;
-
 }
 
 .oeil-gauche3 {
@@ -598,17 +589,10 @@ h1 {
   background: #000;
   border-radius: 100%;
   transition: 0.05s linear;
-  background: linear-gradient(
-    45deg,
-    #ff000d,
-    #ff7b00,
-    #00a2ff,
-    #04ff00
-  );
+  background: linear-gradient(45deg, #ff000d, #ff7b00, #00a2ff, #04ff00);
   background-size: 400% 400%;
   animation: gradientAnim 8s ease infinite;
 }
-
 
 /* Labubu Yeux qui bougent3 carte */
 
@@ -647,7 +631,6 @@ h1 {
   background-image: url(TransitionsPages/TransitionRoseBas.svg);
   height: 91px;
 }
-
 
 .texte-conclusion {
   padding: 80px 0 30px;
@@ -906,7 +889,6 @@ footer ul li button:hover {
   text-decoration: underline;
 }
 
-
 @media (max-width: 1300px) {
   .conteneur-presentation {
     flex-direction: column;
@@ -916,7 +898,6 @@ footer ul li button:hover {
     margin-inline: auto;
   }
 
-  
   .conteneur_histoire {
     flex-direction: column-reverse;
   }
@@ -933,27 +914,25 @@ footer ul li button:hover {
     opacity: 0.5;
   }
 
+  .oeil-gauche2 {
+    top: 95px;
+    left: 68px;
+    width: 17px;
+    height: 28px;
+    rotate: 11deg;
+  }
 
+  .oeil-droit2 {
+    top: 95px;
+    right: 76px;
+    width: 23px;
+    height: 30px;
+  }
 
-.oeil-gauche2 {
-  top: 95px;
-  left: 68px;
-  width: 17px;
-  height: 28px;
-  rotate: 11deg;
-}
-
-.oeil-droit2 {
-  top: 95px;
-  right: 76px;
-  width: 23px;
-  height: 30px;
-}
-
-.pupille2{
-width: 10px;
-height: 15px;
-}
+  .pupille2 {
+    width: 10px;
+    height: 15px;
+  }
 
   .popup-contact-content .container {
     gap: 30px;
@@ -1028,7 +1007,7 @@ height: 15px;
     height: auto;
   }
 
-  .oeil3{
+  .oeil3 {
     display: none;
   }
 
@@ -1070,7 +1049,7 @@ height: 15px;
   .logo {
     padding-top: 140px;
   }
-  
+
   .menu-logo-responsive {
     display: block;
     justify-content: center;
@@ -1139,18 +1118,22 @@ height: 15px;
   .graphiqueEmpile {
     width: 90%;
   }
-  
+
   .LabubuDecoEmpile {
     width: 180px;
     top: 100px;
     left: 10px;
     transform: scaleX(-1) !important;
+    opacity: 0.5;
   }
 
-  .oeil2{
-     display: none;
+  .LabubuDecoEmpile img {
+    opacity: 0.5;
   }
 
+  .oeil2 {
+    display: none;
+  }
 }
 
 @media (max-width: 950px) {
@@ -1185,10 +1168,10 @@ height: 15px;
     height: 70px;
     width: 70px;
   }
-.labubuDecoCarte{
-  margin-left: 0;
-  align-content:center;
-}
+  .labubuDecoCarte {
+    margin-left: 0;
+    align-content: center;
+  }
   .LabubuDecoEmpile {
     width: 250px;
     top: 550px;
@@ -1212,16 +1195,16 @@ height: 15px;
     font-size: 1rem;
   }
 
-  .conteneur-points h1{
+  .conteneur-points h1 {
     font-size: 1.5rem;
   }
 
-  .conteneur-empile h1{
+  .conteneur-empile h1 {
     font-size: 1.5rem;
     padding-bottom: 0;
   }
 
-  .graphiqueCarte h1{
+  .graphiqueCarte h1 {
     font-size: 1.5rem;
   }
 
@@ -1229,18 +1212,18 @@ height: 15px;
     padding-bottom: 20px;
   }
 
-  footer h1{
+  footer h1 {
     font-size: 1.8rem;
   }
 
-  footer h1 img{
+  footer h1 img {
     width: 30%;
   }
-  footer ul li button{
+  footer ul li button {
     font-size: 1.4rem;
   }
 
-  footer ul{
+  footer ul {
     margin-right: 10px;
   }
 
@@ -1248,7 +1231,9 @@ height: 15px;
     opacity: 40%;
   }
 
-  .graphiquePoints p, .graphiqueEmpile p, .columnLegendeCarte2 p {
+  .graphiquePoints p,
+  .graphiqueEmpile p,
+  .columnLegendeCarte2 p {
     font-size: 1rem !important;
   }
 
@@ -1272,6 +1257,10 @@ height: 15px;
   .leaflet-popup-content-wrapper {
     max-width: 260px;
   }
+
+  header {
+    overflow: hidden; /* empêche Labubu de dépasser sur la section suivante */
+  }
 }
 
 @media (max-width: 565px) {
@@ -1282,7 +1271,7 @@ height: 15px;
 
 /* Responsive doux */
 @media (max-width: 560px) {
-  .conteneur-empile p{
+  .conteneur-empile p {
     font-size: 0.8rem;
   }
 
