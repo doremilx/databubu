@@ -751,7 +751,6 @@ footer ul li button:hover {
 
 .labubu_deco_allonge {
   position: absolute;
-  bottom: 0.5;
   left: 75%;
   transform: translateX(-50%);
   opacity: 60%;
@@ -1241,6 +1240,7 @@ footer ul li button:hover {
 
   .labubu_deco_allonge {
     opacity: 40%;
+    transform: translateX(-30vw);
   }
 
   .graphiquePoints p,
@@ -1282,7 +1282,7 @@ footer ul li button:hover {
 
 @media (max-width: 565px) {
   footer {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 }
 
