@@ -373,8 +373,8 @@ h1 {
 }
 
 .LabubuDecoEmpile img {
-  width: 100%; /* L'image s'adapte à la taille du conteneur */
-  height: auto; /* Conserve les proportions de l'image */
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -1136,6 +1136,11 @@ footer ul li button:hover {
     top: 100px;
     left: 10px;
     transform: scaleX(-1) !important;
+    opacity: 0.5;
+  }
+
+  .LabubuDecoEmpile img {
+    opacity: 0.5;
   }
 
   .oeil2 {
@@ -1263,6 +1268,15 @@ footer ul li button:hover {
 
   .leaflet-popup-content-wrapper {
     max-width: 260px;
+  }
+
+  header {
+    min-height: auto;
+    padding-bottom: 310px;
+  }
+
+  #presentation {
+    margin-top: 40px;
   }
 }
 
